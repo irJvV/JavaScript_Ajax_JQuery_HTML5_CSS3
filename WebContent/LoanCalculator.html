@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LoanCalculator_Test</title>
+	<style>
+	.output{font-weight: bold;}
+	#payment{text-decoration: underline;}
+	#graph{border:solid black 1px;}
+	th,td{vertical-align: top;}
+	</style>
+</head>
+<body>
+	<!-- Dit is een HTML Table met <input>-->
+	<table>
+	<tr><th>Enter Loan Data</th>
+		<td></td>
+		<th>Loan Balance, Cumulative Equity, and interes Payments</th></tr>
+	<tr><td>Amound of the loan ($):</td>
+		<td><input id="amount" onchange="calculate();"></td>
+		<td rowspan=8>
+			<canvas id ="graph" width="400" height="250"></canvas></td></tr>
+		<tr><td>Annual interest (%): </td>
+			<td><input id="apr" onchange="calculate();"></td></tr>
+	</table>
+
+</body>
+</html>
