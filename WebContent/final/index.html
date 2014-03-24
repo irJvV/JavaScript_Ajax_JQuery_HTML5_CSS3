@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<style>
+				h1{text-align:center;}
+				li{list-style:none;
+						padding-left:5px;}
+				#container {width: 600px; 
+						margin: 80px auto;
+						overflow: hidden;
+						border: 1px #666 dashed;
+						min-height: 200px;
+						padding: 15px;}
+		</style>
+		<title>My Movies</title>
+		<script type="text/javascript" src="AJAX_load_final.js"></script>
+		<script type="text/javascript" src="AJAX_load_final_movieSelect.js"></script>
+		<script type="text/javascript" src="movieIndex.js"></script>		
+</head>
+<body onload="getMovieTitles()">
+		<div id="container">
+				<h1>My favorite Movies</h1>
+				<div id="movie_title"></div>
+				<br/>
+				<div id="movie_info"></div>
+		</div>
+
+
+</body>
+</html>

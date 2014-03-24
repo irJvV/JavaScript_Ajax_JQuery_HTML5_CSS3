@@ -1,0 +1,43 @@
+
+<html>
+<head><title>WICK Testing Ground</title>
+
+<!-- WICK STEP 1: INSERT CSS -->
+<link rel="stylesheet" type="text/css" href="./wick.css" />
+
+</head>
+<body>
+<script type="text/javascript" language="JavaScript">
+function checkForm() {
+answer = true;
+if (siw && siw.selectingSomething)
+	answer = false;
+return answer;
+}//
+</script>
+<center>
+<p>
+Welcome to the very unpolished WICK testing ground.
+A view source on this document should give you most information you need
+to make WICK work on your site, as i'm still working on more formal documentation
+that'll also include integration suggestions to make this work as fast as possible with
+large amounts of data.
+<br/><br/>
+Be sure to enter multiple e-mail addresses in each field, type a few characters, hit the delete key,
+use your keyboard's up and down arrows, hit return or tab to select an item, use your mouse to hover and click,
+deleting from a current item back into the preceding item, and basically poke around mercilessly.
+<br /><br />
+<div id="wickStatus">
+Loading ... please hold!
+</div>
+<br /><br />
+<form onsubmit="return checkForm()"> <!-- WICK STEP 5: this prevents form from being submitted right-away if a user hits RETURN to select an address -->
+My First Box:<br />
+<input class="wickEnabled" type="text" size="50" /><br />
+<script type="text/javascript" language="JavaScript" src="./sample_data.js"></script> <!-- WICK STEP 2: DEFINE COLLECTION ARRAY THAT HOLDS DATA -->
+<script type="text/javascript" language="JavaScript" src="./wick.js"></script> <!-- WICK STEP 3: INSERT WICK LOGIC -->
+<script>
+document.getElementById("wickStatus").innerHTML = '<a target="_blank" href="./sample_data.js">Loaded <b>' + collection.length + '</b> Sample Addresses</a>';
+</script>
+</body>
+</html>

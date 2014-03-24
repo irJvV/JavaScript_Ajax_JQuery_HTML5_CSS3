@@ -1,0 +1,2 @@
+<p>AJAX is een postbode.</p>
+<p>AJAX voor het heen en weer sturen van txt xml json enz.</p>

@@ -1,0 +1,1 @@
+Dit is een test voor AJAX gekoppeld aan index.html ---- data.txt ---

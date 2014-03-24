@@ -1,27 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Javascript_Ajax_Jquery_HTML5_CSS3</title>
-	<script type="text/javascript" src="OnLoad.js"></script>
-	<script type="text/javascript" src="script2.js"> 
-//script overgenomen in script header....wat hier staat doet niets meer !
-//document.write("Test javaScript Head");
-	</script>
-	<script type="text/javascript" src="Opmaak.js"></script>
-	<script type="text/javascript" src="DeBug.js"></script>
+<script type="text/javascript" src="AJAX_load_Doc.js"></script>
 </head>
 <body>
-<p><b><i><script> 
-	
-	var p = new Point(1,1);
-	document.writeln(p.x);
-	
-	setTimeout(MoveON,2000);
-</script></i></b></p>
-	Hallo zie deze verdwijnbare buttons
-	<button onclick="hide(this,true); DeBug('hide button 1');">Hide1</button>
-	<button onclick="hide(this); DeBugJQuery('hide button 2');">Hide2</button>
-	<img src="tempLayer21.gif" alt="Kiddo" height="42" width="42"> 
+
+<div id="myDiv"><h2>AJAX tekst aanpassen</h2></div>
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+
 </body>
 </html>
